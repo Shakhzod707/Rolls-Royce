@@ -28,7 +28,6 @@ nav img{
     flex: 1;
     text-align: right;
     margin-bottom: 20%;
-
 }
 
 .nav-links ul li{
@@ -103,11 +102,43 @@ nav .fas{
     display: none;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 600px) {
     .text-box h1{
         font-size: 50px;
     }
     .nav-links ul li{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .nav-links{
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        font-size: 36px;
+    }
+    nav .fas{
+        font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+    }
+    /* .nav-links ul li{
         display: block;
     }
     .nav-links {
@@ -131,7 +162,7 @@ nav .fas{
     .nav-links ul{
         padding: 30px;
 
-    }
+    } */
 }
 
 .course{
@@ -179,7 +210,7 @@ h3{
     box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.9);
 }
 
-@media(max-width:700px){
+@media(max-width:600px){
     .row{
         flex-direction: column;
     }
@@ -331,7 +362,7 @@ body{
     color: rgb(177, 177, 177);
 }
 
-@media(max-width: 700px) {
+@media(max-width: 600px) {
     .testimonial-col img{
         margin-left: 0px;
         margin-right: 15px;
@@ -355,13 +386,13 @@ body{
     padding: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     .cta h1{
         font-size: 34px;
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 600px) {
     .cta h1{
         font-size: 24px;
     }
@@ -399,4 +430,8 @@ body{
 
 .fa-heart{
     color: black;
+}
+
+.rlogo{
+    width: 100px; 
 }
